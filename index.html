@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+	<script src="../static/js/table.js{{ '?rand=' + random_int(5) }}"></script>
+	<style>
+		th {
+		    height: 10px;
+		}
+		td {
+		    width: 20px;
+		    height: 10px;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="row mb-2">
+		    <button class="col-5 m-auto" onclick="toggleRendering()">Start / Pause</button>
+		    <button class="col-5 m-auto" onclick="stepRendering()">Step Once</button>
+		</div>
+
+		<div class="row">
+		    <table class="col-12" id="table"></table>
+		</div>
+	</div>
+</body>
+
